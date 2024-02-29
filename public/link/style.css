@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:#344955; */
+    background-color: #50727B;
+    background-image: url(bg1.png);
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
+}
+
+.container{
+    background-color:#FFF;
+    /* background-color: #50727B; */
+    background-image: url("https://th.bing.com/th/id/R.7dc80bd5f866a35b4ce60d354f797713?rik=%2bSMDTrcL2GeyMA&riu=http%3a%2f%2fwww.thewowstyle.com%2fwp-content%2fuploads%2f2015%2f04%2ffree-wallpaper-1.jpg&ehk=M5d0t7IokzrTOrzGdVmt11LDcnO9BWFSwwm4Gx8ttmE%3d&risl=1&pid=ImgRaw&r=0");
+    width: 55%;
+    height: 90vh;
+    border-radius: 20px;
+    box-shadow:  0px 5px 25px rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.container form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputBox{
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+    /* background-color: #000; */
+}
+
+.inputBox input[type="text"], .inputBox input[type="email"], .inputBox input[type="altemail"], .inputBox input[type="tel"], .inputBox input[type="college"]{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 0px 10px;
+    font-size: 16px;
+    /* color: #444; */
+    color:#FFF;
+    background-color: #000;
+}
+
+.inputBox textarea{
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 0px 10px;
+    font-size: 16px;
+
+}
+
+#heading {
+    text-align: center;
+    font-size: 35px;
+    font-weight:  1000;
+    color: #000;
+
+}
+.inputBox button{
+    padding-bottom: 20vh;
+}
+
+.inputBox button:hover{
+    /* background: rgb(0, 17, 255); */
+    background-color:#344955;
+    transition: all 0.3s ease;
+}
+
+::placeholder{
+    font-size: 16px;
+}
+
+.alert{
+    width: 100%;
+    background-color: rgb(0, 255, 106);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    display: none;
+}
+.mainbox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+@media (min-width: 992px) {
+    /* Large devices */
+    .mainbox {
+        flex-direction: row;
+    }
+
+    .box1, .box2 {
+        flex: 1;
+    }
+
+    .box1 {
+        margin-right: 20px; /* Adjust the margin as needed */
+    }
+}
+
+.box1, .box2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputBox {
+    margin-bottom: 10px;
+        /* display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        padding-bottom: 15px; */
+    
+}
+/* .inputBox input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+} */
+
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Allow the container to grow and take available space */
+    margin: auto; /* Center the container */
+}
+
+.inputBox button {
+    text-align: center;
+    margin-left: 220px;
+    width: 40%; /* Make the button take up the full width of its container */
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: rgb(0, 119, 255); 
+    background: #000;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* .inputBox button{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    background: rgba(63, 114, 76, 0.7);
+} */

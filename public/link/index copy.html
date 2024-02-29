@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Messages | Firebase</title>
+    <link rel="stylesheet" href="psudo.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" id="contactForm">
+            <h1 class="form-title">Registration form</h1>
+
+            <div class="main-user-info">
+                    <div class="user-input-box">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name"  required />
+                    </div>
+        
+                    <div class="user-input-box">
+                        <label for="emailid">Email id:</label>
+                        <input type="email" id="emailid"  required />
+                    </div>
+        
+                    <div class="user-input-box">
+                        <label for="altemailid">Alt Email Id:</label>
+                        <input type="email" id="altemailid"  required />
+                    </div>
+
+                    <div class="user-input-box">
+                        <label for="phoneNumber">Phone Number:</label>
+                        <input type="tel" id="PhoneNumber"  required />
+                    </div>
+
+                    <div class="user-input-box">
+                        <label for="college">College:</label>
+                        <input type="text" id="msgContent"  required />
+                    </div>
+        
+                    <div class="user-input-box">
+                        <label for="insta">Insta Account:</label>
+                        <input type="text" id="insta"  required />
+                    </div> 
+            </div>
+        </form>
+        <div class="form-submit-btn">
+           <a href="early_bird.html"><button  type="submit" value="Register">Submit</button></a> 
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./mail.js"></script>
+</body>
+</html>

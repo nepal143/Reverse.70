@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Responsive Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="psudo.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">Registration</h1>
+      <form action="/register" method="post" id="registrationForm">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="username">Instagram Handle</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder=""
+              required
+              onblur="checkUsername()"
+            />
+             <span id="usernameError" style="color: red;"></span>
+          </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder=""
+              required
+               onblur="checkEmail()"
+            />
+            <span id="emailError" style="color: red;"></span>
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Alternate E-mail</label>
+            <input
+              type="text"
+              id="phoneNumber"
+              name="phoneNumber"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder=""
+              required
+            />
+          </div>
+          <div class="user-input-box">
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              placeholder=""
+              required
+            />
+          </div>
+        </div>
+        <div class="gender-details-box">
+          <span class="gender-title">Gender</span>
+          <div class="gender-category">
+            <input type="radio" name="gender" id="male" value="Male" required />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="Female" required />
+            <label for="female">Female</label>
+          </div>
+        </div>
+        <div class="form-submit-btn">
+          <button type="submit" id="submit">Register</button>
+        </div>
+      </form>
+    </div>
+<script>
+   async function checkUsername(username) {
+      try {
+        const response = await fetch(`/checkUsername?username=${username}`);
+        const data = await response.json();
+        return data.exists;
+      } catch (error) {
+        console.error('Error checking username:', error);
+        return false;
+      }
+    }
+
+    async function checkEmail(email) {
+      try {
+        const response = await fetch(`/checkEmail?email=${email}`);
+        const data = await response.json();
+        return data.exists;
+      } catch (error) {
+        console.error('Error checking email:', error);
+        return false;
+      }
+    }
+
+    document.getElementById('registrationForm').addEventListener('submit', async function(event) {
+     // event.preventDefault(); 
+
+      // Get form data
+      const formData = new FormData(this);
+      const fullName = formData.get('fullName');
+      const username = formData.get('username');
+      const email = formData.get('email');
+      const phoneNumber = formData.get('phoneNumber');
+      const password = formData.get('password');
+      const confirmPassword = formData.get('confirmPassword');
+      const gender = formData.get('gender');
+
+      // Perform client-side validation
+      if (!fullName || !username || !email || !phoneNumber || !password || !confirmPassword || !gender) {
+        alert('Please fill in all fields');
+        return;
+      }
+
+      if (password !== confirmPassword) {
+        alert('Passwords do not match');
+        return;
+      }
+
+      // Check if username already exists
+      const isUsernameExists = await checkUsername(username);
+      if (isUsernameExists) {
+        alert('Username already exists');
+        return;
+      }
+
+      // Check if email already exists
+      const isEmailExists = await checkEmail(email);
+      if (isEmailExists) {
+        alert('Email already exists');
+        return;
+      }
+
+      // If all validations pass, submit the form
+      try {
+        await fetch('/register', {
+          method: 'POST',
+          body: formData,
+        });
+        alert('Form submitted successfully');
+        // Optionally, redirect to another page after successful submission
+        // window.location.href = '/success';
+      } catch (error) {
+        console.error('Error submitting form:', error);
+        alert('Error submitting form. Please try again later.');
+      }
+    });
+</script>
+
+  </body>
+</html>

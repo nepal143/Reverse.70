@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    input[type="email"],
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+    .qr-code {
+      text-align: center;
+    }
+    @media screen and (max-width: 900px) {
+     .container{
+      width: 80vw;
+     } 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Make Payment</h1>
+    <form action="/payment" method="post">
+      <div class="form-group">
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="upiId">Enter your UPI ID:</label>
+        <input type="text" id="upiId" name="upiId" required>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <div class="qr-code"> 
+      <!-- Replace 'qr_code_image.jpg' with the actual path to your QR code image -->
+      {{!-- <img src="/path/to/qr_code_image.jpg" alt="QR Code"> --}}
+    </div>
+  </div>
+</body>
+</html>

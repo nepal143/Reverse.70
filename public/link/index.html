@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Messages | Firebase</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <form action="" id="contactForm">
+            <div class="alert">Registered successfully</div>
+            <div id="heading">Registration form</div>
+
+            <div class="mainbox">
+                <div class="box1">
+                    <div class="inputBox">
+                        <input type="text" id="name" placeholder="Your name...." required />
+                    </div>
+        
+                    <div class="inputBox">
+                        <input type="email" id="emailid" placeholder="Your Email....." required />
+                    </div>
+        
+                    <div class="inputBox">
+                        <input type="email" id="altemailid" placeholder="Your  Alternate Email....." required />
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="inputBox">
+                        <input type="tel" id="PhoneNumber" placeholder="Your Phone Number....." required />
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" id="msgContent" placeholder="College....." required />
+                    </div>
+        
+                    <div class="inputBox">
+                        <input type="text" id="insta" placeholder="Insta handle...." required />
+                    </div>
+        
+                   </div>
+            </div>
+       
+        
+
+        </form>
+        <div class="inputBox">
+
+           <a href="./early_bird.html"><button  type="submit">Submit</button></a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./mail.js"></script>
+</body>
+
+</html>

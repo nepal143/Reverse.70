@@ -1,0 +1,196 @@
+@font-face {
+    font-family: myfont1;
+    src: url(fonts/Adobe\ Caslon\ Pro\ Regular.ttf);
+}
+
+@font-face {
+    font-family: myfont2;
+    src: url(fonts/Billie\ Eilish.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(43, 43, 43, 0.933);
+    z-index: 100;    
+    transition: opacity 300.5s, visibility 1.5s;
+}
+
+.loader::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 8px solid white;
+    border-top-color: black;
+    border-radius: 50%;
+    animation: loading 0.8s ease infinite;
+}
+
+.loader--hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+@keyframes loading{
+    from{ transform: rotate(0turn)}
+    to{transform: rotate(1turn)}
+}
+
+body{
+    background-image: url(ima/WhatsApp\ Image\ 2024-02-26\ at\ 18.18.41_de5c7396.jpg);
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 17%;
+}
+
+.registration{
+    background-color: white;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 20rem;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.registration li{
+    list-style-type: none;
+}
+
+li:nth-child(1){
+    display: flex;
+    padding-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+    font-size: 4vw;
+    font-family: myfont1;
+    /* font-weight: bolder; */
+}
+
+li:nth-child(3){
+    padding-right: 2rem;
+}
+
+li:nth-child(2){
+    padding-top: 3rem;
+    font-size: 1.2rem;
+    margin-left: 10vw;
+    font-family: myfont2;
+    font-weight: bolder;
+}
+
+.registration:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+}
+
+.download{
+    width: 30%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40vh;
+    margin-left: 2vw;
+}
+
+.brochure{
+    font-family: myfont2;
+    width: 80%;
+    border: 5px solid black;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 1.2rem;
+}
+
+.brochure:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid white;
+
+}
+
+@media (min-width: 651px) and (max-width: 1200px) 
+{   
+    .registration{
+        width: auto;
+    }
+    li:nth-child(2){
+        font-size: 1.5rem;
+    }
+    li:nth-child(1){
+        font-size: 3rem;
+    }
+    .brochure{
+        font-size: 1.4rem;
+    }
+    .download{
+        position: absolute;
+        left: 7%;
+        height: 8%;
+        width: 80%;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 650px){
+    .registration{
+        width: 95%;
+        border-radius: 5rem;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .registration li{
+        padding: 0;
+        margin: 0;
+    }
+
+    .image img{
+        scale: 0.8;
+    }
+    li:nth-child(3){
+        display: none;
+    }
+    li:nth-child(1){
+        padding: 1rem;
+        font-size: 3rem;
+    }
+    li:nth-child(2){
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .download{
+        width: 100%;
+    }
+    .brochure{
+        font-size: 1.1rem;
+    }
+}
