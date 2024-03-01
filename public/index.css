@@ -45,6 +45,18 @@ header ul{
     display: flex;
 }
 
+header ul li{
+    margin-left: 10px;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header ul li:hover{
+    color:#b70f00;
+}
+
 
 header ul li{
     list-style: none;
@@ -111,6 +123,12 @@ header ul li a:hover{
 
 }
 
+.content .textBox .first:hover{
+    color: #ffffff;
+    background-color:#6b0900;
+    transition: all 0.3s ease;
+}
+
 
 .content .textBox .second{
     display: inline-block;
@@ -124,6 +142,12 @@ header ul li a:hover{
     text-decoration: none;
     margin-left: 40px;
 
+}
+
+.content .textBox .second:hover{
+    background-color: #ffffff;
+    color: #b70f00;
+    transition: all 0.4s ease;
 }
 
 
@@ -149,6 +173,10 @@ header ul li a:hover{
     font-size: 30px;
     list-style: none;
     
+}
+
+.top{
+    margin-top: 14px;
 }
 
 .soc li {

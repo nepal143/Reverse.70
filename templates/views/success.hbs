@@ -7,24 +7,118 @@
   <!-- Add any necessary styles here -->
   <style>
     body {
+      background-color: black;
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
       height: 100vh;
       margin: 0;
-      text-align: center;
+      color: white;
+    }
+    div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .text{
+      z-index: 100;
+      padding: 0;
+      transform: translateY(5rem);
+      margin: 0;
+    }
+
+    .top{
+      font-size: 2rem;
     }
     .success-image {
+      margin-top: -10rem;
       max-width: 100%;
       max-height: 100%;
+      margin-bottom: -10rem;
+      scale: 0.9;
+    }
+    .bottom{
+      transform: translateY(-3rem);
+      font-size: 1.3rem;
+    }
+    .done{
+      margin-bottom: 10rem;
+      transform: translateY(-1.5rem);
+    }
+    .done button{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #ffffff;
+    font-size: 1rem;
+    border-radius: 40px;
+    color: #b70f00;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    width: 10rem;
+    }
+
+    .done button:hover{
+      color: #ffffff;
+    background-color:#6b0900;
+    transition: all 0.3s ease;
+    }
+    a{
+      text-decoration: none;
+    }
+
+    @media(max-width: 710px){
+
+      .success-image{
+        background-image: url(QR.jpg);
+        position: absolute;
+        max-width: 100%;
+        
+      }
+      p{
+        text-overflow: clip;
+      }
+      .top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        transform: translateY(-10rem);
+      }
+      .bottom{
+        font-size: 1rem;
+
+        transform: translateY(-12rem);
+      }
+      .done{
+        transform: translateY(10rem);
+      }
+      .image{
+        width: 40%;
+        height: 40%;
+      }
     }
 
   </style>
 </head>
 <body>
-  <div>
-    <h1>YOU ARE ALMOST DONE SCAN THE QR AND MAKE PYAMENT WE WILL SEND YOU THE VERIFICATION EMAIL WITHIN 1 DAY  </h1>
-    <img src="QR.png" alt="Success" class="success-image">
+  <div class="text">
+    <p class="top">Here speech is free, but the snacks aren't xd</p>
+    <p class="bottom">Scan to pay the registration fee- Rs. 99/-</p>
   </div>
+  <div class="image">
+    <img src="QR.jpg" alt="Success" class="success-image">
+  </div>
+  <div class="done">
+    <button onclick= "goto(this)">Done</button>
+  </div>
+  <script>
+      function goto(link){
+      alert("The Whole world awaits your story. Thanks for registering!");
+    } 
+  </script>
 </body>
 </html>
