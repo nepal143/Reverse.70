@@ -21,19 +21,12 @@ const userSchema = new mongoose.Schema({
     },
     phoneNumber: {
         type: String,
-        required: true,
         description: "The phone number of the user."
     },
     password: {
         type: String,
         required: true,
         description: "The password chosen by the user."
-    },
-    gender: {
-        type: String,
-        enum: ["Male", "Female"],
-        required: true,
-        description: "The gender of the user."
     },
     upiId: {
         type: String

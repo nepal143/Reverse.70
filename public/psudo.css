@@ -122,6 +122,9 @@ body{
 }
 
 @media(max-width: 600px){
+    .alternate{
+        display: none;
+    }
     .container{
         min-width: 280px;
     }

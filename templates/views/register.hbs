@@ -45,14 +45,14 @@
             />
             <span id="emailError" style="color: red;"></span>
           </div>
-          <div class="user-input-box">
+          <div class="user-input-box alternate">
             <label for="phoneNumber">Alternate E-mail</label>
             <input
               type="text"
               id="phoneNumber"
               name="phoneNumber"
               placeholder=""
-              required
+              {{!-- required --}}
             />
           </div>
           <div class="user-input-box">
@@ -74,15 +74,6 @@
               placeholder=""
               required
             />
-          </div>
-        </div>
-        <div class="gender-details-box">
-          <span class="gender-title">Gender</span>
-          <div class="gender-category">
-            <input type="radio" name="gender" id="male" value="Male" required />
-            <label for="male">Male</label>
-            <input type="radio" name="gender" id="female" value="Female" required />
-            <label for="female">Female</label>
           </div>
         </div>
         <div class="form-submit-btn">
@@ -121,13 +112,12 @@
       const fullName = formData.get('fullName');
       const username = formData.get('username');
       const email = formData.get('email');
-      const phoneNumber = formData.get('phoneNumber');
+      //const phoneNumber = formData.get('phoneNumber');
       const password = formData.get('password');
       const confirmPassword = formData.get('confirmPassword');
-      const gender = formData.get('gender');
 
       // Perform client-side validation
-      if (!fullName || !username || !email || !phoneNumber || !password || !confirmPassword || !gender) {
+      if (!fullName || !username || !email  || !password || !confirmPassword ) {
         alert('Please fill in all fields');
         return;
       }
