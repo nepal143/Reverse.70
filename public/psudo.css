@@ -19,7 +19,6 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background: url(bg.png);
     background-size: cover;
     background-color: #000;
 }
@@ -88,9 +87,7 @@ body{
     margin-top: 40px;
 }
 
-body{
-    background-image:  url(ima/background.png);
-}
+
 .form-submit-btn button:hover{
     background-color: white;
     color: black;

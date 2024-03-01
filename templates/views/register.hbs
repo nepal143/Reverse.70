@@ -56,9 +56,9 @@
             />
           </div>
           <div class="user-input-box">
-            <label for="password">Password</label>
+            <label for="password">Phone Number</label>
             <input
-              type="password"
+              type="Text"
               id="password"
               name="password"
               placeholder=""
@@ -66,9 +66,9 @@
             />
           </div>
           <div class="user-input-box">
-            <label for="confirmPassword">Confirm Password</label>
+            <label for="confirmPassword">College/University</label>
             <input
-              type="password"
+              type="Text"
               id="confirmPassword"
               name="confirmPassword"
               placeholder=""
@@ -129,11 +129,6 @@
       // Perform client-side validation
       if (!fullName || !username || !email || !phoneNumber || !password || !confirmPassword || !gender) {
         alert('Please fill in all fields');
-        return;
-      }
-
-      if (password !== confirmPassword) {
-        alert('Passwords do not match');
         return;
       }
 

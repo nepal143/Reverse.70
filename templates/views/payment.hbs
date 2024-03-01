@@ -6,14 +6,20 @@
   <title>Payment</title>
   <style>
     body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
+      background-color: #000000;
       margin: 0;
+      width: 100vw;
+      height: 100vh;
       padding: 0;
     }
     .container {
+      width: 50vw;
       max-width: 600px;
-      margin: 50px auto;
+      margin: 50px;
       background-color: #fff;
       border-radius: 10px;
       padding: 20px;
@@ -25,7 +31,11 @@
       text-align: center;
     }
     .form-group {
+      position: relative;
       margin-bottom: 20px;
+    }
+    .form-group label{
+      padding-right: 10rem;
     }
     label {
       display: block;
@@ -35,7 +45,8 @@
     input[type="email"],
     input[type="text"] {
       width: 100%;
-      padding: 10px;
+      height: 2rem;
+      padding: 5px;
       font-size: 16px;
       border: 1px solid #ccc;
       border-radius: 5px;
