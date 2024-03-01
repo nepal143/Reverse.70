@@ -134,14 +134,8 @@ app.post("/payment", async (req, res) => {
 app.get("/success" , (req,res) =>{
   res.render("success")
 })
-// GET route to generate the QR code based on UPI ID
 app.get("/generate_qr", (req, res) => {
   const { upiId } = req.query;
-
-  // Generate the QR code based on the provided UPI ID
-  // This could involve using a library to generate the QR code image
-  
-  // For demonstration purposes, let's assume you have a function to generate the QR code URL
   const qrCodeUrl = generateQRCodeUrl(upiId);
 
   // Send the QR code URL as a response

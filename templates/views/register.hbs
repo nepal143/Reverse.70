@@ -46,31 +46,30 @@
             <span id="emailError" style="color: red;"></span>
           </div>
           <div class="user-input-box alternate">
-            <label for="phoneNumber">Alternate E-mail</label>
+            <label for="Alternate">Alternate E-mail</label>
             <input
               type="text"
-              id="phoneNumber"
-              name="phoneNumber"
+              id="Alternate"
+              name="Alternate"
               placeholder=""
-              {{!-- required --}}
             />
           </div>
           <div class="user-input-box">
-            <label for="password">Phone Number</label>
+            <label for="phoneNumber">Phone Number</label>
             <input
               type="Text"
-              id="password"
-              name="password"
+              id="phoneNumber"
+              name="phoneNumber"
               placeholder=""
               required
             />
           </div>
           <div class="user-input-box">
-            <label for="confirmPassword">College/University</label>
+            <label for="College">College/University</label>
             <input
               type="Text"
-              id="confirmPassword"
-              name="confirmPassword"
+              id="College"
+              name="College"
               placeholder=""
               required
             />
@@ -112,13 +111,12 @@
       const fullName = formData.get('fullName');
       const username = formData.get('username');
       const email = formData.get('email');
-      //const phoneNumber = formData.get('phoneNumber');
-      const password = formData.get('password');
-      const confirmPassword = formData.get('confirmPassword');
+      const phoneNumber = formData.get('phoneNumber');
+      const College  = formData.get("College")
 
       // Perform client-side validation
-      if (!fullName || !username || !email  || !password || !confirmPassword ) {
-        alert('Please fill in all fields');
+      if (!fullName || !username || !email || phoneNumber || College ) {
+        //alert('Please fill in all fields');
         return;
       }
 
