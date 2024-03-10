@@ -1,0 +1,317 @@
+@font-face {
+  font-family: AmericanGaramound;
+  src: url(Fonts/AmericanGaramound/American\ Garamond\ Bold\ Italic.otf);
+}
+@font-face {
+  font-family: CatholicSchoolGirlBB;
+  src: url(Fonts/catholic_school_gir/CATHSGBR.TTF);
+}
+@font-face {
+  font-family: BrettleySignature;
+  src: url(Fonts/Brettley-Signature-DEMO-BF63d7cff930ddd.ttf);
+}
+@font-face {
+  font-family: AdobeCalsonPro-Regular;
+  src: url(Fonts/ACalsonPro/ACaslonPro-Regular.otf);
+}
+@font-face {
+  font-family: AdobeCalsonPro-SemiBold;
+  src: url(Fonts/ACalsonPro/ACaslonPro-Semibold.otf);
+}
+@font-face {
+  font-family: AdobeCalsonPro-Bold;
+  src: url(Fonts/ACalsonPro/ACaslonPro-Bold.otf);
+}
+@font-face {
+  font-family: AdobeCalsonPro-Italic;
+  src: url(Fonts/ACalsonPro/ACaslonPro-Italic.otf);
+}
+@font-face {
+  font-family: AdobeCalsonPro-SemiBoldItalic;
+  src: url(Fonts/ACalsonPro/ACaslonPro-SemiboldItalic.otf);
+}
+@font-face {
+  font-family: Dutch766;
+  src: url(Fonts/dutch766-bt-bold-font/dutch-766-bold-bt.ttf);
+}
+@font-face {
+  font-family: Kontora-Extravold;
+  src: url(Fonts/kontora-extrabold.otf);
+}
+@font-face {
+  font-family: KingCaslon;
+  src: url(Fonts/KingsCaslonDisplay_Trial_It.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border;
+}
+
+nav {
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1rem;
+  position: relative;
+}
+
+.nav_tabs {
+  margin-top: 4rem;
+  display: flex;
+  font-family: AmericanGaramound;
+}
+.nav_tabs li {
+  list-style-type: none;
+  margin-right: 3rem;
+}
+
+.nav_tabs li a {
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: black;
+}
+
+.nav_tabs li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.nav_image {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.registration {
+  margin: auto;
+  top: -100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 64%;
+}
+
+.text h2 {
+  font-size: 5rem;
+  font-family: AdobeCalsonPro-SemiBoldItalic;
+  text-decoration: underline;
+}
+
+.text p {
+  font-size: 2.25rem;
+  font-family: CatholicSchoolGirlBB;
+}
+
+.registratrion img {
+  z-index: -1;
+  position: absolute;
+}
+.form {
+  display: flex;
+  flex-direction: row;
+  margin-top: -5rem;
+  margin-bottom: 5rem;
+  /* position: relative; */
+}
+
+.form-img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.form aside {
+  width: 20%;
+}
+.form main {
+  padding: 2rem;
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 64%;
+  margin-left: 1rem;
+}
+
+section main .text h2 {
+  /* color: white; */
+  font-size: 2.25rem;
+  padding-top: 1rem;
+  font-family: AdobeCalsonPo-Bold;
+  text-decoration: none;
+}
+
+section main .text p {
+  padding-top: 1rem;
+  font-size: 1.875rem;
+  padding-bottom: 1rem;
+  font-family: AdobeCalsonPro-Regular;
+}
+
+section main .text span {
+  font-size: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  font-family: AdobeCalsonPro-Regular;
+}
+
+.email {
+  text-decoration: underline;
+  font-family: AmericanGaramound;
+  font-size: 2rem;
+}
+
+.information form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form2 {
+  width: 100%;
+  height: 100%;
+}
+
+.input-container label {
+  width: 100%;
+  height: 100%;
+}
+label {
+  width: 100%;
+  font-size: 1.5rem;
+  font-family: AmericanGaramound;
+  padding: 1rem 1rem;
+}
+
+form {
+  color: black;
+  max-width: 880px;
+  margin: 20px auto;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px;
+  pointer-events: none;
+  margin: auto;
+}
+
+.form_text {
+  width: 100%;
+  padding: 8px;
+  padding-top: 24px; /* Adjust the top padding to make room for the label */
+  box-sizing: border-box;
+}
+
+.payment-dropdown {
+  margin: auto;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid white;
+  width: 100%;
+  height: 60px;
+  border-radius: 30px;
+}
+
+.payment-dropdown_h {
+  font-size: 1.5rem;
+  margin-left: 60px;
+  margin-top: 13px;
+}
+
+.form2_h {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 100;
+}
+
+button {
+  padding: 10px 20px;
+  width: 100%;
+  /* height: 10%; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* height: ; */
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 30px;
+  height: 70px;
+}
+
+footer {
+  z-index: 1;
+  background: #000;
+  height: 90vh;
+  width: 100vw;
+  color: white;
+  padding-top: 1rem;
+}
+
+footer .register-now {
+  display: flex;
+  width: 60vw;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .register-now h1 {
+  font-size: 2.5rem;
+  font-family: AdobeCalsonPro-Bold;
+}
+footer .register-now p {
+  font-family: KingCaslon;
+  font-size: 2rem;
+}
+
+footer .form {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  width: 58vw;
+  background: white;
+  color: black;
+  margin: auto;
+  margin-top: 2rem;
+  border-radius: 0 130px 130px 0;
+  font-size: 16px;
+  font-family: AdobeCalsonPro-Regular;
+}
+footer .contacts {
+  font-size: 0.875rem;
+  font-family: AdobeCalsonPro-SemiBold;
+  font-weight: 300;
+  margin-left: 20vw;
+  margin-top: 3rem;
+  width: 25vw;
+}
+
+footer .contacts p {
+  text-decoration: underline;
+  margin-top: 4rem;
+  font-size: 2rem;
+  font-family: AdobeCalsonPro-SemiBold;
+}
+
+footer .made-with {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 60vw;
+  margin: auto;
+  font-size: 2rem;
+  font-family: AdobeCalsonPro-Regular;
+}

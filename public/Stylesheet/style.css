@@ -1,0 +1,760 @@
+@font-face {
+  font-family: AmericanGaramound;
+  src: url(Fonts/AmericanGaramound/American\ Garamond\ Bold\ Italic.otf);
+}
+@font-face {
+  font-family: CatholicSchoolGirlBB;
+  src: url(Fonts/catholic_school_gir/CATHSGBR.TTF);
+}
+@font-face {
+  font-family: BrettleySignature;
+  src: url(Fonts/Brettley-Signature-DEMO-BF63d7cff930ddd.ttf);
+}
+@font-face {
+  font-family: AdobeCalsonPro-Regular;
+  src: url(Fonts/ACalsonPro/ACaslonPro-Regular.otf);
+}
+@font-face {
+  font-family: AdobeCalsonPro-SemiBold;
+  src: url(Fonts/ACalsonPro/ACaslonPro-Semibold.otf);
+}
+@font-face {
+  font-family: AdobeCalsonPro-Bold;
+  src: url(Fonts/ACalsonPro/ACaslonPro-Bold.otf);
+}
+@font-face {
+  font-family: AdobeCalsonPro-Italic;
+  src: url(Fonts/ACalsonPro/ACaslonPro-Italic.otf);
+}
+@font-face {
+  font-family: AdobeCalsonPro-SemiBoldItalic;
+  src: url(Fonts/ACalsonPro/ACaslonPro-SemiboldItalic.otf);
+}
+@font-face {
+  font-family: Dutch766;
+  src: url(Fonts/dutch766-bt-bold-font/dutch-766-bold-bt.ttf);
+}
+@font-face {
+  font-family: Kontora-Extravold;
+  src: url(Fonts/kontora-extrabold.otf);
+}
+@font-face {
+  font-family: KingCaslon;
+  src: url(Fonts/KingsCaslonDisplay_Trial_It.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border;
+}
+
+nav {
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1rem;
+  position: relative;
+}
+
+.nav_tabs {
+  margin-top: 4rem;
+  display: flex;
+  font-family: AmericanGaramound;
+}
+.nav_tabs li {
+  list-style-type: none;
+  margin-right: 3rem;
+}
+
+.nav_tabs li a {
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: black;
+}
+
+.nav_tabs li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.nav_image {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.main-heading {
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.main-heading h1 {
+  font-size: 5rem;
+  font-family: AdobeCalsonPro-Italic;
+  margin-left: 2rem;
+}
+.main-heading p {
+  font-size: 2rem;
+  text-decoration: underline;
+  font-family: AdobeCalsonPro-Italic;
+  margin-left: 2rem;
+  transform: translateY(-50px);
+}
+
+.slam {
+  display: flex;
+  width: 70vw;
+  justify-content: flex-end;
+  margin: 0 auto;
+}
+
+.slam h1 {
+  font-family: AdobeCalsonPro-SemiBold;
+  font-size: 2.5rem;
+}
+.slam p {
+  font-size: 2.5rem;
+  font-family: BrettleySignature;
+  margin: 0 10px;
+}
+.main-img {
+  width: 70vw;
+  margin: 0 auto;
+}
+.main-img img {
+  width: 70vw;
+}
+.section-one {
+  width: 70vw;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.section-one h1 {
+  font-family: AdobeCalsonPro-Bold;
+  font-size: 3rem;
+  margin-left: 2rem;
+}
+.section-one p {
+  font-family: AdobeCalsonPro-Regular;
+  font-size: 1.625rem;
+  margin-left: 2rem;
+}
+.section-one h2 {
+  font-family: AdobeCalsonPro-SemiBold;
+  font-size: 1.625rem;
+  margin-left: 2rem;
+}
+.section-one img {
+  position: absolute;
+  z-index: -1;
+  top: -10rem;
+  left: -14rem;
+}
+
+.section-two {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.section-two img{
+  width: 50%;
+}
+.section-two img:nth-child(odd){
+  width: 20%;
+}
+.section-three {
+  width: 70vw;
+  margin: 0 auto;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.section-three h1 {
+  font-size: 2.5rem;
+  font-family: AdobeCalsonPro-Bold;
+  margin-left: 2rem;
+}
+.section-three p {
+  font-size: 1.25rem;
+  font-family: AdobeCalsonPro-Regular;
+  margin-left: 2rem;
+}
+
+.section-three img {
+  transform: rotate(180deg);
+  transform: rotateY(180deg);
+  position: absolute;
+  right: -14rem;
+  top: -8rem;
+  z-index: -1;
+}
+
+.quote {
+  border: 2px solid black;
+  position: relative;
+  padding: 59px 114px;
+  width: 50vw;
+  margin: auto;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.quote h1 {
+  font-size: 2.5rem;
+  font-family: AdobeCalsonPro-SemiBoldItalic;
+}
+.quote p {
+  text-align: right;
+  font-size: 1.5rem;
+  font-family: AmericanGaramound;
+}
+
+.quote img {
+  position: absolute;
+}
+.quote .star1 {
+  top: 16rem;
+  left: 8rem;
+  transform: rotate(5deg);
+}
+.quote .star2 {
+  top: -1.3rem;
+  right: 5rem;
+  transform: rotate(50deg);
+  width: 40px;
+}
+
+.participation {
+  width: 66%;
+  margin: auto;
+  margin-top: 6%;
+}
+
+.participation_h {
+  font-size: 2.5rem;
+  font-family: AdobeCalsonPro-Bold;
+}
+
+.participation_p {
+  font-size: 1.5rem;
+  font-family: AdobeCalsonPro-Regular;
+  margin-left: 2.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.prizze {
+  width: 100%;
+  overflow-x: hidden;
+  margin-top: 3rem;
+}
+
+.prizze_h {
+  position: relative;
+  font-size: 2.7rem;
+  overflow-x: hidden;
+  z-index: 1;
+  margin: auto;
+}
+
+.prizze img {
+  height: 25%;
+  position: absolute;
+  object-fit: contain;
+  width: 20%;
+  z-index: 0;
+  margin-bottom: 4rem;
+  transform: rotate(-90deg);
+}
+
+.prizes {
+  width: 66%;
+  height: 100%;
+  margin: auto;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.prizes_p {
+  margin-top: 2.5%;
+}
+
+.prizes_li {
+  width: 60%;
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-left: 10%;
+}
+
+.prizes img {
+  object-fit: cover;
+  height: 80%;
+  width: 50%;
+  margin-top: 5rem;
+}
+
+.brochure {
+  height: 100%;
+  width: 100%;
+}
+
+.cursive {
+  margin-top: 2%;
+  margin-left: 400px;
+}
+
+.cursive h2 {
+  text-transform: uppercase;
+  /* font-family: ; */
+  font-family: Dutch766;
+  font-size: 2rem;
+}
+
+.cursive img {
+  margin-left: 300px;
+  margin-top: 20px;
+}
+
+.bigButton {
+  border: 1px solid black;
+  margin-top: 15px;
+  padding-top: 30px;
+  margin: auto;
+  width: 64%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+}
+
+.bigButton h2 {
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+.fa-arrow-right {
+  padding-right: 2rem;
+  font-size: 2.5rem;
+}
+
+.calendar {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-bottom: 3%;
+}
+
+.calendar img {
+  width: 80%;
+  padding: 5% 10%;
+}
+
+.calendar h2 {
+  margin-top: 3%;
+  padding-left: 550px;
+  font-size: 2rem;
+}
+
+footer {
+  z-index: 1;
+  background: #000;
+  width: 100vw;
+  color: white;
+  padding-top: 1rem;
+}
+
+footer .register-now {
+  display: flex;
+  width: 60vw;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .register-now h1 {
+  font-size: 2.5rem;
+  font-family: AdobeCalsonPro-Bold;
+}
+footer .register-now p {
+  font-family: KingCaslon;
+  font-size: 2rem;
+}
+
+footer .form {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  width: 58vw;
+  background: white;
+  color: black;
+  margin: auto;
+  margin-top: 2rem;
+  border-radius: 0 130px 130px 0;
+  font-size: 16px;
+  font-family: AdobeCalsonPro-Regular;
+}
+footer .contacts {
+  font-size: 0.875rem;
+  font-family: AdobeCalsonPro-SemiBold;
+  font-weight: 300;
+  margin-left: 20vw;
+  margin-top: 3rem;
+  width: 25vw;
+}
+
+footer .contacts p {
+  text-decoration: underline;
+  margin-top: 4rem;
+  font-size: 2rem;
+  font-family: AdobeCalsonPro-SemiBold;
+}
+
+footer .made-with {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 60vw;
+  margin: auto;
+  font-size: 2rem;
+  font-family: AdobeCalsonPro-Regular;
+}
+
+@media screen and (max-width: 960px) {
+  nav {
+    position: fixed;
+    bottom: 1rem;
+    width: 100vw;
+  }
+  nav .nav_tabs {
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 10px 20px;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-around;
+    background: #000;
+  }
+  nav .nav_tabs li a {
+    padding: 5px 10px;
+    border: none;
+    color: white;
+  }
+  .nav_tabs li {
+    margin-right: 1.8rem;
+  }
+  .nav_image {
+    display: none;
+  }
+  .main-heading h1 {
+    font-size: 3rem;
+    margin-left: 0;
+  }
+  .main-heading p {
+    transform: translateY(-20px);
+    margin-left: 0;
+    font-size: 1rem;
+  }
+  .slam h1 {
+    font-size: 1.5rem;
+  }
+  .slam p {
+    font-size: 1.5rem;
+  }
+  .main-img {
+    width: 100vw;
+  }
+  .main-img img {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .section-one {
+    width: 90vw;
+  }
+  .section-one h1 {
+    font-size: 1.25rem;
+  }
+  .section-one p {
+    font-size: 1rem;
+  }
+  .section-one h2 {
+    font-size: 1rem;
+  }
+  .section-one img {
+    display: none;
+  }
+  .section-three {
+    width: 90vw;
+  }
+  .section-three h1 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .section-three p {
+    font-size: 1rem;
+  }
+  .section-three img {
+    display: none;
+  }
+  .quote h1 {
+    font-size: 2rem;
+  }
+  .quote {
+    padding: 30px 60px;
+  }
+  .quote p {
+    font-size: 1.5rem;
+    text-align: right;
+  }
+  .quote .star1{
+    top: 11rem;
+  }
+  .participation .participation_h {
+    font-size: 1.25rem;
+    margin-top: 2.5rem;
+  }
+  .participation .participation_p {
+    font-size: 1rem;
+  }
+  .prizze_h {
+    font-size: 1.25rem;
+  }
+  .prizze img {
+    display: none;
+  }
+  .prizes {
+    margin-top: 4rem;
+    flex-wrap: wrap;
+  }
+  .prizes_li {
+    font-size: 1rem;
+    width: 80%;
+  }
+  .prizes img {
+    margin-top: 0;
+    width: 100%;
+  }
+  .cursive {
+    margin-left: 0;
+  }
+  .cursive h2 {
+    font-size: 1.25rem;
+    margin-left: 2rem;
+  }
+  .cursive img {
+    width: 180px;
+    margin-left: 6rem;
+  }
+  .bigButton {
+    background: #000;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 5%;
+  }
+  .bigButton h2 {
+    font-size: 1.5rem;
+  }
+  .bigButton .fa-solid {
+    width: 10px;
+  }
+  .calendar h2 {
+    padding-left: 125px;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  footer {
+    width: 100vw;
+  }
+  footer .register-now {
+    width: 90vw;
+  }
+  footer .register-now h1 {
+    font-size: 1.5rem;
+  }
+  footer .register-now p {
+    font-size: 1.5rem;
+  }
+  footer .form {
+    width: 85vw;
+  }
+  footer .form h1 {
+    font-size: 1.5rem;
+  }
+  footer .form img {
+    width: 50px;
+  }
+  footer .contacts {
+    width: 90vw;
+    margin: 0 5vw;
+    margin-top: 1rem;
+  }
+  footer .contacts h1 {
+    font-size: 1.5rem;
+  }
+  footer .contacts p {
+    font-size: 1.5rem;
+  }
+  footer .made-with {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  nav .nav_tabs {
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 10px 20px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+    background: black;
+  }
+  .main-heading h1 {
+    font-size: 2.5rem;
+  }
+  .main-heading p {
+    font-size: 1rem;
+  }
+  .section-one h1 {
+    font-size: 1rem;
+  }
+  .section-one p {
+    font-size: 1rem;
+  }
+  .slam h1 {
+    font-size: 1rem;
+  }
+  .slam p {
+    font-size: 1rem;
+  }
+  .main-img {
+    width: 100vw;
+  }
+  .main-img img {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .section-three h1 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .section-three p {
+    font-size: 1rem;
+  }
+  .quote h1 {
+    font-size: 1rem;
+  }
+  .quote {
+    padding: 20px 40px;
+  }
+  .quote p {
+    font-size: 0.75rem;
+    text-align: right;
+  }
+  .quote .star1 {
+    top: 6rem;
+    left: 2rem;
+  }
+  .participation .participation_h {
+    font-size: 1rem;
+    margin-top: 2.5rem;
+  }
+  .participation .participation_p {
+    font-size: 1rem;
+  }
+  .prizze_h {
+    font-size: 1rem;
+  }
+  .prizze img {
+    display: none;
+  }
+  .prizes {
+    margin-top: 4rem;
+  }
+  .prizes_li {
+    font-size: 0.8rem;
+  }
+  .prizes img {
+    margin-top: 0;
+    width: 100%;
+  }
+  .cursive {
+    margin-left: 0;
+  }
+  .cursive h2 {
+    margin-left: 2rem;
+    font-size: 1.25rem;
+  }
+  .cursive img {
+    width: 150px;
+    margin-left: 5rem;
+  }
+  .bigButton {
+    background: #000;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 5%;
+  }
+  .bigButton h2 {
+    font-size: 1.5rem;
+  }
+  .bigButton .fa-solid {
+    width: 10px;
+  }
+  .calendar h2 {
+    padding-left: 125px;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  footer {
+    width: 100vw;
+  }
+  footer .register-now {
+    width: 90vw;
+  }
+  footer .register-now h1 {
+    font-size: 1rem;
+  }
+  footer .register-now p {
+    font-size: 1rem;
+  }
+  footer .form {
+    width: 85vw;
+  }
+  footer .form h1 {
+    font-size: 1rem;
+  }
+  footer .form img {
+    width: 50px;
+  }
+  footer .contacts {
+    width: 90vw;
+    margin: 0 5vw;
+    margin-top: 1rem;
+  }
+  footer .contacts h1 {
+    font-size: 1rem;
+  }
+  footer .contacts p {
+    font-size: 1rem;
+  }
+  footer .made-with {
+    font-size: 1rem;
+  }
+}

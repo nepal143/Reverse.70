@@ -36,7 +36,12 @@ app.get("/", (req, res) => {
 app.get("/register", (req, res) => {
   res.render("register");
 });
-
+app.get("/aboutUs", (req, res) => {
+  res.render("aboutUs");
+});
+app.get("/sponsor", (req, res) => {
+  res.render("sponsor");
+});
 // Login page
 app.get("/login", (req, res) => {
   res.render("login");
