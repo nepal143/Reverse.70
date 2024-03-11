@@ -210,17 +210,17 @@ nav {
 }
 
 .section-four {
-  width: 65vw;
+  width: 80vw;
   display: flex;
   justify-content: space-between;
-  margin-left: 35vw;
+  margin-left: 15vw;
   margin-top: 2rem;
   font-family: Kontora-Extravold;
   font-size: 26px;
 }
 
 .section-four .sec-4-content {
-  width: 65vw;
+  width: 50vw;
 }
 .section-four .sec-4-content img{
   display: flex;
@@ -238,10 +238,12 @@ nav {
   padding: 2rem 1.5rem;
 }
 
-.section-four .sec-4-content .download-brochure h1 {
-  font-size: 1.75rem;
-  font-family: AdobeCalsonPro-Bold;
+.section-four .sec-4-content .download-brochure h2 {
+  /* font-size: 1.75rem; */
+  font-size: 2.5vw  ;
+  /* font-family: AdobeCalsonPro-Bold; */
 }
+
 .section-five {
   display: flex;
   justify-content: space-between;
@@ -263,9 +265,16 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 30vw;
+  width: 50vw;
   margin-top: 4rem;
+  margin-left: 10vw;
 }
+/* @media screen and (max-width:800px) {
+  .sec-5-content{
+    width: 80vw;
+  }
+  
+} */
 
 .section-five .sec-5-content h1 {
   font-size: 1.875rem;
@@ -433,7 +442,17 @@ footer .made-with {
     font-size: 2rem;
   }
   .section-four .sec-4-content img{
-    width: 60%;
+    width: 10%;
+  }
+  .section-five .sec-5-img{
+    display: none;
+  }
+  .section-five{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5em;
   }
 
 
@@ -521,4 +540,7 @@ footer .made-with {
   footer .made-with {
     font-size: 1rem;
   }
+}
+.download-brochure img{
+  width: 100px;
 }
